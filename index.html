@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dhanushkumar B | Healthcare AI developer, moving into quantum computing</title>
+<meta name="description" content="Healthcare AI developer building ML models and AI agents on genomic data, with a genomics foundation and a focus on quantum computing for healthcare.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f6f3;--surf:#fff;--ink:#102120;--slate:#4f5f5a;--line:#d8ddd9;--teal:#0b6460;--teal2:#084a47;--dark:#0e1716;
+--A:#2e9d5b;--C:#2f6fd0;--G:#e0a21b;--T:#d6453a;
+--serif:'Source Serif 4',Georgia,serif;--sans:'Hanken Grotesk',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:99}.skip:focus{left:8px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.015em}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:14px}
+.lede{color:var(--slate);max-width:62ch}
+section{padding:clamp(64px,8vw,112px) 0}
+/* header */
+header.bar{position:sticky;top:0;z-index:50;background:rgba(245,246,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
+.brand{font:600 17px var(--serif);text-decoration:none}
+nav{display:flex;gap:26px;font-size:15px}nav a{text-decoration:none;color:var(--slate);padding:6px 0}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;font:600 15px var(--sans);padding:12px 22px;border-radius:4px;text-decoration:none;border:1px solid var(--teal);background:var(--teal);color:#fff;transition:background .15s}
+.btn:hover{background:var(--teal2)}.btn.alt{background:transparent;color:var(--teal)}.btn.alt:hover{background:#e3eeec}
+/* hero */
+.hero{padding:clamp(48px,7vw,96px) 0 clamp(56px,7vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(38px,4.9vw,68px);white-space:nowrap;margin-bottom:18px}
+.role{font:500 clamp(19px,2vw,23px)/1.35 var(--serif);color:var(--teal);margin-bottom:20px;max-width:30ch}
+.hero p.lede{font-size:18px;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.meta{font-size:14.5px;color:var(--slate)}
+.run{background:var(--surf);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.bases{display:flex;height:5px}.bases i{flex:1}.bases i:nth-child(1){background:var(--A)}.bases i:nth-child(2){background:var(--C)}.bases i:nth-child(3){background:var(--G)}.bases i:nth-child(4){background:var(--T)}
+.run h2{font:600 19px var(--serif);margin:0;padding:20px 24px 4px}
+.run>p{padding:0 24px 8px;font-size:14.5px;color:var(--slate)}
+.run ol{list-style:none;padding:8px 24px 22px;counter-reset:s}
+.run li{position:relative;padding:12px 0 12px 44px;border-top:1px solid var(--line);counter-increment:s}
+.run li::before{content:'';position:absolute;left:6px;top:19px;width:12px;height:12px;border-radius:50%;background:var(--A)}.run li:nth-child(2)::before{background:var(--C)}.run li:nth-child(3)::before{background:var(--G)}
+.run b{font:600 15.5px var(--sans);display:block}.run li span{display:block;font-size:14.5px;line-height:1.45;color:var(--slate)}
+.run .ex{padding:12px 24px;background:#eef1ee;font-size:13px;color:var(--slate);border-top:1px solid var(--line)}
+/* employers */
+.employers{padding:28px 0;border-block:1px solid var(--line);background:var(--surf)}
+.employers .wrap{display:flex;flex-wrap:wrap;gap:10px 40px;align-items:baseline}
+.employers p{font-size:14.5px;color:var(--slate)}.employers strong{font:600 17px var(--serif)}
+/* focus */
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px);margin-top:44px}
+.focus h3{font-size:23px;margin-bottom:10px;padding-top:16px;border-top:3px solid var(--teal)}
+.focus p{color:var(--slate);font-size:16.5px}
+/* work */
+.work{background:var(--surf);border-block:1px solid var(--line)}
+.plist{margin-top:40px;border-top:1px solid var(--ink)}
+.prow{display:grid;grid-template-columns:1.1fr 1.3fr auto;gap:12px 32px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:26px 4px;cursor:pointer;color:inherit;font:inherit;transition:background .15s}
+.prow:hover{background:#f1f5f3}
+.prow h3{font-size:24px}.prow p{color:var(--slate);font-size:16px}
+.prow .tags{display:block;font:400 12.5px var(--mono);color:var(--teal2);margin-top:6px}
+.prow .go{font-weight:600;color:var(--teal);white-space:nowrap}
+/* experience */
+.tl{margin-top:40px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:28px 0;border-top:1px solid var(--line)}
+.job time{font:400 14px var(--mono);color:var(--slate);padding-top:5px}
+.job h3{font-size:22px}.job .org{font-weight:600;color:var(--teal);margin:2px 0 10px}
+.job ul{padding-left:18px;color:var(--slate);max-width:70ch}.job li{margin-bottom:5px}
+/* skills (dark band) */
+.skills{background:var(--dark);color:#eef2ef;padding:clamp(56px,7vw,96px) 0 0;overflow:hidden}
+.skills .wrap{max-width:1440px;display:grid;grid-template-columns:250px minmax(0,1fr) 210px;gap:28px;align-items:center}
+.skills h2{color:#fff}.skills .lede{color:#a9b8b2;font-size:16px}
+.sk-l,.sk-r{padding-bottom:70px}
+.sk-r h3{font:600 17px var(--serif);margin-bottom:12px;color:#fff}
+.sk-r ul{list-style:none;font-size:15px;color:#a9b8b2}.sk-r li{padding:9px 0;border-top:1px solid #26403c}
+.oc-wrap{position:relative;width:100%;aspect-ratio:1.55/1;align-self:end}
+#oc{position:absolute;inset:0;width:100%;height:100%}
+.sk-tooltip{position:absolute;pointer-events:none;z-index:5;font:600 12.5px var(--mono);color:#fff;background:#07100f;border:1px solid #26403c;padding:5px 10px;white-space:nowrap;opacity:0;transform:translate(-50%,-6px);transition:opacity .15s}
+.sk-tooltip.show{opacity:1}
+/* credentials */
+.cred{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);margin-top:40px}
+.cred h3{font-size:22px;margin-bottom:8px}.cred p,.cred li{color:var(--slate)}.cred ul{padding-left:18px}.cred li{margin-bottom:4px}
+.cred .blk+.blk{margin-top:28px}
+/* contact */
+.contact{background:var(--teal2);color:#fff}
+.contact h2{color:#fff;max-width:20ch}.contact .lede{color:#cfe3e0;margin-bottom:30px}
+.contact .btn{background:#fff;color:var(--teal2);border-color:#fff}.contact .btn:hover{background:#e3eeec}
+.contact .btn.alt{background:transparent;color:#fff;border-color:#9fc4bf}.contact .btn.alt:hover{background:#0b5a56}
+footer{padding:26px 0;font-size:14px;color:var(--slate)}
+/* modal */
+dialog{margin:auto;width:min(760px,92vw);max-height:88vh;border:1px solid var(--line);border-radius:6px;padding:0;background:var(--surf);color:var(--ink)}
+dialog::backdrop{background:rgba(16,33,32,.6)}
+.m-in{padding:clamp(22px,4vw,40px)}
+.m-in h3{font-size:30px;margin-bottom:6px}.m-in .sub{color:var(--teal);font-weight:600;margin-bottom:22px}
+.m-in h4{font:600 15px var(--sans);margin:20px 0 6px}.m-in p{color:var(--slate)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{font:400 12.5px var(--mono);border:1px solid var(--line);padding:4px 10px;border-radius:3px}
+.m-in .btn{margin-top:26px;cursor:pointer}
+@media(max-width:1000px){.hero .wrap{grid-template-columns:1fr}.focus{grid-template-columns:1fr}.skills .wrap{grid-template-columns:1fr}.sk-l,.sk-r{padding-bottom:28px}.sk-r{order:3;padding-bottom:40px}.oc-wrap{aspect-ratio:1.3/1}.cred{grid-template-columns:1fr}.prow{grid-template-columns:1fr}nav{display:none}.job{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap"><a class="brand" href="#top">Dhanushkumar B</a>
+<nav aria-label="Primary"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a><a href="#credentials">Education</a></nav>
+<a class="btn" href="#contact">Contact</a></div></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<div><h1>Dhanushkumar B</h1>
+<p class="role">Healthcare AI developer, moving into quantum computing.</p>
+<p class="lede">I build ML models and AI agents on genomic data, and I am studying quantum computing for healthcare, including quantum machine learning and quantum simulation for drug discovery. Currently a junior bioinformatician at Anderson Diagnostics Lab.</p>
+<div class="cta"><a class="btn" href="mailto:bdhanushkumar3@gmail.com">Email me</a><a class="btn alt" href="https://www.linkedin.com/in/b-dhanush-kumar-a12717273" target="_blank" rel="noopener">LinkedIn</a><a class="btn alt" href="https://github.com/B-Dhanush22/" target="_blank" rel="noopener">GitHub</a></div>
+<p class="meta">Tamil Nadu, India &nbsp;|&nbsp; B.Tech Biotechnology, 2026</p></div>
+<aside class="run" aria-label="Where I am building"><div class="bases" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<h2>Where I am building</h2><p>Healthcare AI, grounded in genomics.</p>
+<ol><li><b>AI and ML for genomics</b><span>Random Forest and SVM models for driver mutation prediction. AI agents and RAG workflows with n8n, deployed in Streamlit.</span></li>
+<li><b>Clinical genomics foundation</b><span>Nextflow NGS pipelines and ACMG variant interpretation at Anderson Diagnostics Lab.</span></li>
+<li><b>Next: quantum computing for healthcare</b><span>Studying quantum machine learning and quantum simulation for drug discovery and genomic analysis.</span></li></ol></aside>
+</div></section>
+
+<div class="employers"><div class="wrap"><strong>Experience across</strong><p>Anderson Diagnostics Lab (clinical NGS)</p><p>Xcode Life (pharmacogenomics)</p><p>Biocogniz (cancer genomics and ML)</p><p>BioPractify (NGS training)</p></div></div>
+
+<section><div class="wrap"><h2>What I build</h2><p class="lede">Three areas where I have shipped work, each tied to a project below.</p>
+<div class="focus">
+<div><h3>AI and ML for healthcare</h3><p>Random Forest and SVM models that separate driver from passenger mutations in bile duct cancer, plus an AI-driven mutation atlas and ensemble approaches to variant interpretation.</p></div>
+<div><h3>Software and automation</h3><p>Python tooling, Streamlit apps, n8n agents and RAG workflows, and Nextflow pipelines with automated QC that cut manual QC time by 40%.</p></div>
+<div><h3>Clinical genomics foundation</h3><p>ACMG variant classification, WES analysis with GATK and ANNOVAR, and a pharmacogenomics panel built on PharmGKB, ClinPGx and CPIC evidence levels 1A to 4.</p></div>
+</div></div></section>
+<section id="next" style="border-top:1px solid var(--line)"><div class="wrap"><h2>Next: quantum computing in healthcare</h2><p class="lede">I am studying how quantum methods can apply to healthcare problems I already work on. I have not shipped quantum projects yet, and I am open to roles, research projects and collaborations that let me build them.</p>
+<div class="focus">
+<div><h3>Quantum machine learning</h3><p>Classification on genomic and variant features, extending my Random Forest and SVM work.</p></div>
+<div><h3>Quantum simulation for drug discovery</h3><p>Molecular modelling that builds on my COX-2 docking project and my review of AI-driven drug discovery.</p></div>
+<div><h3>Hybrid quantum-classical pipelines</h3><p>Fitting quantum steps into reproducible workflows, drawing on my pipeline engineering experience.</p></div>
+</div></div></section>
+
+<section class="work" id="work"><div class="wrap"><h2>Selected work</h2><p class="lede">Open a project for the method and outcome.</p><div class="plist" id="plist"></div></div></section>
+
+<section id="experience"><div class="wrap"><h2>Experience</h2>
+<div class="tl">
+<article class="job"><time>Mar 2026 to present</time><div><h3>Junior Bioinformatician</h3><p class="org">Anderson Diagnostics Lab</p><ul><li>Design and maintain production Nextflow NGS pipelines from raw reads to clinically interpretable variant reports.</li><li>Classify somatic and germline WES variants using ACMG guidelines.</li><li>Automated QC and data validation, cutting manual QC time by 40%.</li><li>Work with clinical and R&amp;D teams to turn pipeline output into precision medicine insight.</li></ul></div></article>
+<article class="job"><time>Jan to Apr 2026</time><div><h3>Pharmacogenomics Research Intern</h3><p class="org">Xcode Life</p><ul><li>Built an optimised PGx gene panel integrating variants at evidence levels 1A to 4 from PharmGKB, ClinPGx and CPIC.</li><li>Annotated and interpreted genotypes across clinically significant pharmacogenes to produce drug response reports.</li><li>Streamlined variant curation, reducing annotation turnaround and improving report consistency.</li></ul></div></article>
+<article class="job"><time>Jul 2025</time><div><h3>Research Intern, Bioinformatics and AI/ML</h3><p class="org">Biocogniz</p><ul><li>Built Random Forest and SVM models to predict somatic mutations in bile duct cancer from WES and MAF data.</li><li>Ran the full WES pipeline (BWA, GATK, ANNOVAR) and identified driver mutations, contributing to an AI-driven mutation atlas.</li></ul></div></article>
+<article class="job"><time>Apr to Jun 2025</time><div><h3>Bioinformatics Intern, NGS Analysis</h3><p class="org">BioPractify</p><ul><li>Completed structured NGS training covering sequencing workflows, data quality assessment and biological data analysis.</li></ul></div></article>
+<article class="job"><time>Apr to Jun 2025</time><div><h3>Business Development and Documentation Intern</h3><p class="org">NovaHealZ (hybrid)</p><ul><li>Prepared business proposals and documentation and compiled research for startup initiatives.</li></ul></div></article>
+<article class="job"><time>Feb to Mar 2024</time><div><h3>Research Intern, Bioremediation</h3><p class="org">Global Bio-Invention Center</p><ul><li>Characterised microorganisms for bioremediation of heavy metal contaminated environments.</li></ul></div></article>
+</div></div></section>
+
+<section class="skills" id="toolkit"><div class="wrap">
+<div class="sk-l"><h2>Technical toolkit</h2><p class="lede">Tools I use across ML, AI agents, pipelines and docking. Hover a tool to see its name.</p></div>
+<div class="oc-wrap"><canvas id="oc" role="img" aria-label="Orbit diagram of tools: Python, R, Nextflow, GATK, BWA, SAMtools, ANNOVAR, scikit-learn, TensorFlow, XGBoost, Streamlit, AutoDock4, PyMOL, CPIC, ClinVar and more"></canvas><div class="sk-tooltip" id="ocTip"></div></div>
+<div class="sk-r"><h3>Where they show up</h3><ul><li>scikit-learn, TensorFlow, XGBoost: ML on genomic data</li><li>Streamlit, n8n, RAG: AI apps and agents</li><li>Nextflow, GATK, BWA: clinical NGS pipelines</li><li>AutoDock4, PyMOL: molecular docking</li></ul></div>
+</div></section>
+
+<section id="credentials"><div class="wrap"><h2>Education and credentials</h2>
+<div class="cred"><div><div class="blk"><h3>B.Tech, Biotechnology</h3><p>Prathyusha Engineering College, 2022 to 2026. CGPA 80%.</p></div>
+<div class="blk"><h3>Publication</h3><p>A Review on AI-Driven Drug Discovery and Development, SIGNA Journal.</p></div></div>
+<div><h3>Certifications</h3><ul><li>Bioinformatics: Algorithms and Applications, NPTEL</li><li>Basic to Advanced Bioinformatics</li><li>Complexities in Drug Discovery</li><li>AutoDock Tools for Molecular Docking</li><li>Robotics and Automation</li><li>ChatGPT and AI Tools for Research</li></ul></div></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap"><h2>Building healthcare AI or quantum?</h2><p class="lede">I am a junior bioinformatician moving into healthcare AI and quantum computing. Send a note about a role, research project or collaboration.</p>
+<div class="cta"><a class="btn" href="mailto:bdhanushkumar3@gmail.com">bdhanushkumar3@gmail.com</a><a class="btn alt" href="tel:+919840113710">+91 98401 13710</a><a class="btn alt" href="https://www.linkedin.com/in/b-dhanush-kumar-a12717273" target="_blank" rel="noopener">LinkedIn</a><a class="btn alt" href="https://github.com/B-Dhanush22/" target="_blank" rel="noopener">GitHub</a></div></div></section>
+</main>
+<footer><div class="wrap">Dhanushkumar B, 2026</div></footer>
+
+<dialog id="dlg" aria-labelledby="m-t"><div class="m-in"><h3 id="m-t"></h3><p class="sub" id="m-s"></p><h4>Overview</h4><p id="m-i"></p><h4>Method</h4><p id="m-m"></p><h4>Outcome</h4><p id="m-o"></p><h4>Tools</h4><div class="chips" id="m-c"></div><button class="btn" id="m-x" type="button">Close</button></div></dialog>
+
+<script>
+const PROJECTS=[
+  {count:'01 / 06',cat:'CANCER / ML',icon:'🧬',tag:'ML / BIOCOGNIZ',title:'AI MUTATION',subtitle:'CANCER / ML',
+   idea:'Supervised classification models (Random Forest, SVM) built on genomic variant data from MAF files to distinguish driver from passenger mutations in bile duct cancer. Part of an AI-driven bile duct cancer mutation atlas.',
+   system:'Large-scale MAF datasets were preprocessed and transformed into features, then used to train and cross-validate classifiers that surface mutation patterns correlated with disease progression.',
+   stack:['Python','scikit-learn','pandas','matplotlib','SVM','Random Forest','MAF'],
+   eval:'Cross-validated evaluation with high classification accuracy; delivered as an interpretable framework for clinical oncology decision support.',badge:'FEATURED'},
+  {count:'02 / 06',cat:'WES / PIPELINE',icon:'🔬',tag:'NGS / BIOCOGNIZ',title:'WHOLE EXOME',subtitle:'WES / PIPELINE',
+   idea:'End-to-end Whole Exome Sequencing analysis of bile duct cancer samples: alignment, variant calling and functional annotation.',
+   system:'BWA alignment → SAMtools → GATK variant calling → ANNOVAR annotation (refGene, ClinVar). Somatic and germline variant profiles were curated and clinically significant variants filtered for pathway enrichment and survival analysis.',
+   stack:['BWA','SAMtools','GATK','ANNOVAR','refGene','ClinVar'],
+   eval:'Identified significant driver mutations, with downstream Python visualisation informing oncology research outcomes.',badge:'RESEARCH'},
+  {count:'03 / 06',cat:'CRISPR / AI',icon:'✂️',tag:'ML / CRISPR',title:'gRNA DESIGN',subtitle:'CRISPR / AI',
+   idea:'AI-assisted CRISPR guide RNA design: candidate gRNAs ranked by predicted efficiency and off-target risk.',
+   system:'ML scoring combined with CRISPOR API results, packaged as a Streamlit app for interactive guide selection.',
+   stack:['XGBoost','CRISPOR API','Streamlit','Biopython','Python'],
+   eval:'Personal project extending the AI-for-biology toolkit used across my genomics work.',badge:'PROJECT'},
+  {count:'04 / 06',cat:'PGX / PRODUCT',icon:'💊',tag:'PGX / XCODE LIFE',title:'PGX PANEL',subtitle:'PGX / PRODUCT',
+   idea:'Built during the Xcode Life internship: an optimized pharmacogenomics gene panel integrating multi-level evidence variants (LoE 1A–4) from PharmGKB, ClinPGx and CPIC, aligned with ClinVar standards.',
+   system:'Systematic variant annotation and genotype-based interpretation across clinically significant pharmacogenes, with a streamlined curation workflow that reduced annotation turnaround and improved report consistency.',
+   stack:['CPIC','ClinVar','PharmGKB','ClinPGx','Python'],
+   eval:'Reproducible, clinical-grade drug response reports with actionable drug–gene interaction insights delivered to end users.',badge:'CLINICAL-GRADE'},
+  {count:'05 / 06',cat:'DOCKING / DISCOVERY',icon:'⚗️',tag:'CHEMINFORMATICS',title:'COX-2 DOCK',subtitle:'DOCKING / DISCOVERY',
+   idea:'Molecular docking of COX-2 with the anti-inflammatory ligand 10-octadecenoic acid methyl ester to support anti-inflammatory drug discovery.',
+   system:'Protein preparation and ligand optimization (OpenBabel), then flexible side-chain docking in AutoDock4 with grid-based scoring. Poses and interactions analysed in PyMOL.',
+   stack:['AutoDock4','PyMOL','OpenBabel'],
+   eval:'Key binding residues identified, docking pose stability evaluated and binding affinity validated through structural interaction analysis.',badge:'RESEARCH'},
+  {count:'06 / 06',cat:'AUTOMATION / REPORTS',icon:'📋',tag:'CLINICAL / NEXTFLOW',title:'CLINICAL FLOW',subtitle:'AUTOMATION / REPORTS',
+   idea:'Production-grade Nextflow NGS pipelines at Anderson Diagnostics Lab, taking raw sequencing reads to clinically interpretable variant reports.',
+   system:'Automated QC and data-validation steps plus ACMG-guided classification of somatic and germline WES variants, built with clinical and R&D teams.',
+   stack:['Nextflow','Python','ACMG','WES','QC'],
+   eval:'Improved pipeline reproducibility and reduced manual QC time by 40%.',badge:'IN PRODUCTION'},
+];
+
+
+const ROWS=[[0,'Bile duct cancer mutation prediction','Random Forest and SVM classifiers separating driver from passenger mutations in MAF data.','Python, scikit-learn, MAF'],
+[4,'COX-2 molecular docking','Flexible side-chain docking of an anti-inflammatory ligand, with binding residue analysis.','AutoDock4, PyMOL, OpenBabel'],
+[3,'Pharmacogenomics gene panel and reporting','Evidence-tiered panel (LoE 1A to 4) producing genotype-based drug response reports.','PharmGKB, ClinPGx, CPIC'],
+[1,'Whole exome analysis of bile duct cancer','BWA, GATK and ANNOVAR pipeline with somatic and germline variant curation.','BWA, GATK, ANNOVAR, ClinVar'],
+[5,'Production NGS pipelines and QC automation','Nextflow workflows from raw reads to variant reports. Manual QC time down 40%.','Nextflow, Python, ACMG']];
+const dlg=document.getElementById('dlg'),pl=document.getElementById('plist');
+ROWS.forEach((r,k)=>{const b=document.createElement('button');b.type='button';b.className='prow';
+b.innerHTML='<div><h3>'+r[1]+'</h3><span class="tags">'+r[3]+'</span></div><p>'+r[2]+'</p><span class="go">View details</span>';
+b.onclick=()=>{const p=PROJECTS[r[0]],$=i=>document.getElementById(i);
+$('m-t').textContent=r[1];$('m-s').textContent=r[3];$('m-i').textContent=p.idea;$('m-m').textContent=p.system;$('m-o').textContent=p.eval;
+$('m-c').innerHTML=p.stack.map(s=>'<span>'+s+'</span>').join('');dlg.showModal();};pl.appendChild(b);});
+document.getElementById('m-x').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+/* ── orbit canvas: half-universe, concentric semicircles ── */
+(function(){
+  const cv=document.getElementById('oc');
+  if(!cv)return;
+  const wrap=cv.parentElement,tip=document.getElementById('ocTip'),ctx=cv.getContext('2d');
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const si=(slug,hex)=>'https://cdn.simpleicons.org/'+slug+'/'+hex;
+  // 4 concentric rings; nodes are equally spaced on each ring and travel together (equal gaps always)
+  const rings=[
+    {f:1.00,spd: .000075,tools:[['Python','Py','#3776AB',si('python','3776AB')],['TensorFlow','TF','#FF6F00',si('tensorflow','FF6F00')],['R','R','#276DC3',si('r','276DC3')],['GitHub','GH','#f0ede6',si('github','f0ede6')],['Streamlit','St','#FF4B4B',si('streamlit','FF4B4B')],['pandas','pd','#8c6fd6',si('pandas','8c6fd6')],['Nextflow','NF','#0DC09D',si('nextflow','0DC09D')]]},
+    {f:.77,spd:-.000105,tools:[['GATK','GA','#c0422a'],['BWA','BW','#3498db'],['SAMtools','SA','#1abc9c'],['ANNOVAR','AN','#16a085'],['scikit-learn','sk','#F7931E',si('scikitlearn','F7931E')],['Biopython','Bp','#e8b400']]},
+    {f:.56,spd: .000135,tools:[['XGBoost','XG','#f39c12'],['Unix / CLI','>_','#4EAA25',si('gnubash','4EAA25')],['SQL (basics)','SQL','#4479A1',si('mysql','4479A1')],['n8n','n8','#EA4B71',si('n8n','EA4B71')],['Claude / AI tools','Cl','#D97757',si('claude','D97757')]]},
+    {f:.37,spd:-.000175,tools:[['AutoDock4','AD','#8e44ad'],['PyMOL','PM','#e74c3c'],['CPIC / PharmGKB','CP','#27ae60'],['ClinVar','CV','#3b7bd6']]},
+  ];
+  const nodes=[];
+  rings.forEach((rg,ri)=>rg.tools.forEach((t,i)=>{
+    const n={n:t[0],ab:t[1],c:t[2],ring:ri,base:(i+.5)*Math.PI/rg.tools.length,x:0,y:0,a:1,img:null};
+    if(t[3]){const im=new Image();im.onload=()=>{n.img=im;};im.src=t[3];}
+    nodes.push(n);
+  }));
+  let stars=[],hover=-1,W=0,H=0,cx=0,cy=0,R1=0,nr=22,dpr=1;
+  const cols=['240,237,230','59,123,214','230,126,34','26,188,156','192,66,42'];
+
+  function resize(){
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    W=wrap.clientWidth;H=wrap.clientHeight;
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    cx=W/2;cy=H;                                   // centre sits on the bottom edge => perfect half-universe
+    nr=Math.max(15,Math.min(26,W*.032));
+    R1=Math.min(W/2-nr-6,H-nr-8);
+    stars=[];
+    for(let i=0;i<340;i++){
+      const a=Math.PI+Math.random()*Math.PI, r=Math.pow(Math.random(),.55);
+      stars.push({a,r,s:Math.random()*1.4+.4,o:Math.random()*.55+.2,c:cols[(Math.random()*cols.length)|0],p:Math.random()*6.28,d:Math.random()*.5+.2});
+    }
+  }
+
+  cv.addEventListener('mousemove',e=>{
+    const b=cv.getBoundingClientRect(),mx=e.clientX-b.left,my=e.clientY-b.top;
+    hover=-1;
+    nodes.forEach((n,i)=>{if(n.a>.3&&(mx-n.x)**2+(my-n.y)**2<=(nr+6)**2)hover=i;});
+    if(hover>=0){tip.textContent=nodes[hover].n;tip.style.left=nodes[hover].x+'px';tip.style.top=(nodes[hover].y-nr-14)+'px';tip.classList.add('show');cv.style.cursor='pointer';}
+    else{tip.classList.remove('show');cv.style.cursor='default';}
+  });
+  cv.addEventListener('mouseleave',()=>{hover=-1;tip.classList.remove('show');});
+
+  function draw(now){
+    ctx.clearRect(0,0,W,H);
+    // dome of particles (half disc, centred on bottom edge)
+    const Rd=R1*.27;
+    stars.forEach(s=>{
+      const tw=reduceMotion?1:.55+.45*Math.sin(now*.0009*s.d+s.p);
+      ctx.beginPath();ctx.arc(cx+Math.cos(s.a)*s.r*Rd,cy+Math.sin(s.a)*s.r*Rd,s.s,0,6.283);
+      ctx.fillStyle='rgba('+s.c+','+(s.o*tw)+')';ctx.fill();
+    });
+    // concentric semicircles
+    ctx.lineWidth=1;ctx.strokeStyle='rgba(240,237,230,.13)';
+    rings.forEach(rg=>{ctx.beginPath();ctx.arc(cx,cy,R1*rg.f,Math.PI,Math.PI*2);ctx.stroke();});
+    // nodes travel along the arcs, wrapping across the half-circle with a soft fade at both ends
+    nodes.forEach((n,i)=>{
+      const rg=rings[n.ring],R=R1*rg.f;
+      let th=(n.base+(reduceMotion?0:rg.spd*now))%Math.PI;if(th<0)th+=Math.PI;
+      const ph=Math.PI+th;
+      n.x=cx+Math.cos(ph)*R;n.y=cy+Math.sin(ph)*R;
+      const edge=.09*Math.PI;n.a=Math.max(0,Math.min(1,th/edge,(Math.PI-th)/edge));
+      if(n.a<=0)return;
+      const hv=hover===i,rad=hv?nr*1.15:nr;
+      ctx.globalAlpha=n.a;
+      const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,rad*2.6);
+      g.addColorStop(0,n.c+(hv?'55':'22'));g.addColorStop(1,'transparent');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,rad*2.6,0,6.283);ctx.fill();
+      ctx.beginPath();ctx.arc(n.x,n.y,rad,0,6.283);ctx.fillStyle='#0e1716';ctx.fill();
+      ctx.strokeStyle=hv?n.c:'rgba(240,237,230,.32)';ctx.lineWidth=hv?2:1.2;ctx.stroke();
+      if(n.img){const s=rad*1.05;ctx.drawImage(n.img,n.x-s/2,n.y-s/2,s,s);}
+      else{ctx.font='700 '+Math.round(rad*(n.ab.length>2?.5:.62))+'px "JetBrains Mono",monospace';ctx.fillStyle=n.c;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(n.ab,n.x,n.y+.5);}
+      ctx.globalAlpha=1;
+    });
+    requestAnimationFrame(draw);
+  }
+  resize();
+  new ResizeObserver(resize).observe(wrap);
+  requestAnimationFrame(draw);
+})();
+
+
+</script></body></html>
